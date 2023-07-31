@@ -1,5 +1,28 @@
 # stopwatch
 Program Time Counter
+
+--------------------------------------------- 
+ms            %       Task name
+--------------------------------------------- 
+1014          20.1%   step1
+2012          40.0%   step1
+2008          39.9%   other
+--------------------------------------------- 
+5035                  total
+
+
+func main() {
+	var w swer.Sw = swer.NewPpStopWatch()
+	w.Start("step1")
+	time.Sleep(time.Second)
+	w.Stop()
+	time.Sleep(time.Second * 2)
+	w.Start("step1")
+	time.Sleep(time.Second * 2)
+	w.Stop()
+	fmt.Println(w.PrettyPrint())
+}
+
 ## 程序耗时统计
 
 这是一个 golang 程序的耗时统计报告，报告中显示了不同模块的任务耗时。下面是每个模块的详细说明:
