@@ -1,4 +1,4 @@
-# stopwatch
+# 程序耗时统计
 Program Time Counter
 
 | ms   | %      | Task name |
@@ -22,7 +22,7 @@ func main() {
 	fmt.Println(w.PrettyPrint())
 }
 ```
-## 程序耗时统计
+## stopwatch
 
 这是一个 golang 程序的耗时统计报告，报告中显示了不同模块的任务耗时。下面是每个模块的详细说明:
 
