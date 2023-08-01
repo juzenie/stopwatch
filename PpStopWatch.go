@@ -1,4 +1,4 @@
-package swer
+package main
 
 import (
 	"fmt"
