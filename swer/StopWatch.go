@@ -8,6 +8,7 @@ import (
 	"time"
 )
 
+// Sw Step 1: convert
 type Sw interface {
 	Start(taskName string)
 	Stop()
